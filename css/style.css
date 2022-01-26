@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "OpenSans Regular";
+    src: url('../fonts/OpenSans-Regular.ttf');  /* Подключаем прямой шрифт */
+}
+@font-face {
+    font-family: "PTSerif Regular";
+    src: url('../fonts/PTSerif-Regular.ttf');   /* Подключаем шрифт с засечками */
+}
+.font2 { 
+    font-family:  "PTSerif Regular", Helvetica, Arial, sans-serif ; /*шрифт с засечками*/
+}
+h1{font-size: 2.5em;} /* доп. настройка размера шрифта из-за свойств браузера */
+body {
+    font-family:  "OpenSans Regular", Helvetica, Arial, sans-serif ; /*задаём шрифт*/
+    display: flex;               /*flexbody*/  
+    flex-direction: column;      /*flex в столбик*/  
+    background-color: beige;   /*цвет фона*/
+}
+header {
+/*  background-color: yellow; */ /*временный фон для позиционирования*/
+    border-bottom: black solid 2px;  
+    text-align: center; 
+    padding: 10px;
+    font-size: 20px;
+}
+main {
+    display: flex;  /*flex row для asisde и section*/
+    width: 900px;   /*фиксируем ширину для asisde и section*/
+    margin: 0 auto;
+    }
+aside {
+    padding: 35px;
+ /* background-color: beige;*/    /*временный фон для позиционирования*/
+}
+.img {
+    border: solid rgb(149, 149, 149) 2px; /*рамка для фото*/
+}
+footer {
+/*  background-color: rgb(252, 252, 0);*/ /*временный фон для позиционирования*/
+    border-top: black solid 2px;  
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+section {
+    padding-left: 35px;
+/*  background-color: burlywood; */  /*временный фон для позиционирования*/
+}
+.header-link{
+    margin: 0 20px; /*отступ справа-слева для пунктов навигации */
+}
+.contacts{
+    display: flex; /*flex строка для контактов*/
+}
+ .contacts img {
+    padding-right: 10px; /*отступ для телефона и почты*/
+}  
